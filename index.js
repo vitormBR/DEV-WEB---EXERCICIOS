@@ -8,7 +8,7 @@ app.get('/', (req, res) =>{
 
 app.get('/aplicação', (req, res) =>{
   res.send("Este repositório serve para hospedar os exercícios e é uma mensagem da aplicação")
-})
+});
 
 app.listen(
     3000, 

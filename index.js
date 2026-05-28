@@ -46,6 +46,11 @@ app.get("/buscar" , (req, res) =>{
   res.send(`buscando por : ${nome} `)
 });
 
+app.get("/produtos", (req,res) =>{
+  const categoria=req.query.categoria
+  const pagina=req.query.pagina
+  res.send(`categoria: ${categoria} página: ${pagina}`)
+});
 
 app.listen(
     3000, 

@@ -30,6 +30,11 @@ app.get('/usuario/:id',(req, res) =>{
   res.send(`usuário ${id}`)
 });
 
+app.get("/produtos/:nome", (req, res) =>{
+  const nome = req.params.nome
+  res.send(`${nome}`)
+});
+
 app.listen(
     3000, 
     () => console.log(`Servidor em execução`)

@@ -65,6 +65,13 @@ app.get("/home", (req, res) => {
     res.render("view");
 });
 
+app.get("/perfil", (req, res) => {
+    res.render("perfil", {
+        nome: "Vitor",
+        idade: 17
+    });
+});
+
 
 
 app.listen(

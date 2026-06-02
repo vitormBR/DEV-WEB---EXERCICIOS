@@ -95,6 +95,28 @@ app.get("/condicoes", (req, res) => {
 
 });
 
+app.get("/listafilmes", (req, res) => {
+    const filmes = [
+        {
+            nome: "Vingadores",
+            ano: 2019
+        },
+        {
+            nome: "Batman",
+            ano: 2022
+        },
+        {
+            nome: "Interestelar",
+            ano: 2014
+        }
+    ];
+    res.render("listaFilmes", {
+        filmes
+    });
+});
+
+
+
 
 app.listen(
     3000, 

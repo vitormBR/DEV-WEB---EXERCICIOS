@@ -61,6 +61,12 @@ app.get("/usuarios", (req,res) =>{
   res.send(`Filtrando usuários com idade ${idade}`)
 });
 
+app.get("/home", (req, res) => {
+    res.render("view");
+});
+
+
+
 app.listen(
     3000, 
     () => console.log(`Servidor em execução`)

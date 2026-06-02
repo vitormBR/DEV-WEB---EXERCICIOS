@@ -86,6 +86,14 @@ app.get("/filmes", (req, res) => {
 
 })
 
+app.get("/condicoes", (req, res) => {
+
+    res.render("condicoes", {
+        logado: true,
+        admin: false
+    });
+
+});
 
 
 app.listen(

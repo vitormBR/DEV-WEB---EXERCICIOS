@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Condições</h1>
+
+{{#if logado}}
+    <p>Usuário está logado</p>
+{{else}}
+    <p>Usuário não está logado</p>
+{{/if}}
+
+{{#unless admin}}
+    <p>Você não é administrador</p>
+{{/unless}}
+
+</body>
+</html>

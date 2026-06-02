@@ -73,6 +73,20 @@ app.get("/perfil", (req, res) => {
 });
 
 
+app.get("/filmes", (req, res) => {
+    const lista = [
+        "Vingadores",
+        "Batman",
+        "Interestelar",
+        "Avatar"
+    ];
+    res.render("filmes", {
+        lista
+    });
+
+})
+
+
 
 app.listen(
     3000, 

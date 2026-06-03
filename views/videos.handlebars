@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Lista de Vídeos</h1>
+
+{{#each videos}}
+
+<div
+style="
+border:1px solid black;
+padding:20px;
+margin:20px;
+"
+>
+
+    <img
+    src="{{this.thumbnail}}"
+    width="250"
+    >
+
+    <h2>
+        {{this.titulo}}
+    </h2>
+
+    <p>
+        Criador:
+        {{this.criador}}
+    </p>
+
+    <p>
+        Visualizações:
+        {{this.visualizacoes}}
+    </p>
+
+    <p>
+        Curtidas:
+        {{this.curtidas}}
+    </p>
+
+    <p>
+        Hashtag:
+        {{this.hashtag}}
+    </p>
+
+</div>
+
+{{/each}}
+    
+</body>
+</html>

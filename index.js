@@ -73,7 +73,7 @@ app.get("/perfil", (req, res) => {
 });
 
 
-app.get("/filmes", (req, res) => {
+app.get("/filme", (req, res) => {
     const lista = [
         "Vingadores",
         "Batman",
@@ -95,7 +95,7 @@ app.get("/condicoes", (req, res) => {
 
 });
 
-app.get("/listafilmes", (req, res) => {
+app.get("/filmes", (req, res) => {
     const filmes = [
         {
             nome: "Vingadores",
@@ -114,6 +114,8 @@ app.get("/listafilmes", (req, res) => {
         filmes
     });
 });
+
+
 
 
 

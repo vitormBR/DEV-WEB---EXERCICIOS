@@ -40,7 +40,7 @@ app.get("/videos/cadastrar", (req, res) => {
 
 });
 
-// CADASTRAR VÍDEO
+
 app.post("/videos", (req, res) => {
 
     const novoVideo = {
